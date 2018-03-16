@@ -1,9 +1,9 @@
 # vtkImageDualSigmoid
-Threaded smooth thresholding filter for vtk using a sigmoid function.
+Threaded smooth thresholding filter for vtk using a sigmoid function. Works for 2d and 3d vtkImageData.
 
 Inputs:
 
- Primary input is vtkImageData
+Primary input is vtkImageData
  
 Options:
 
