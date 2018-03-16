@@ -19,7 +19,9 @@ Options:
 The example here thresholds an image argv[1] to the specified threshold argv[2]
 
 Example input
+
 ![Alt text](https://i2.wp.com/andaharoo.files.wordpress.com/2018/03/test.png?ssl=1&w=450)
 
 Example output thresholded to 180
+
 ![Alt text](https://i2.wp.com/andaharoo.files.wordpress.com/2018/03/output.png?ssl=1&w=450)
