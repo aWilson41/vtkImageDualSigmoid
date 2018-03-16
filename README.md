@@ -7,34 +7,25 @@ Inputs:
  
 Options:
 
-SetOutputMaximum(double max)
- 
-SetOutputMinimum(double min)
- 
-	Using the output max and min you can specify the range of the resulting image. Usually you want this to be the original image range.
-  
-SetAlpha(double alpha)
- 
-	This is the smoothness of the curve
-  
-SetLowerBeta(double lowerBeta)
- 
-	This is the lower threshold
-  
-SetUpperBeta(double upperBeta)
- 
-	This is the upper threshold
-  
-SetBoundType(SigmoidType type)
- 
-	This needs the enum specified in the filter vtkImageDualSigmoid::DUAL, LOWER, or UPPER. Allowing you to threshold using only the lower threshold, upper threshold, or both.
+To specify the range of the output we can use SetOutputMaximum(double max) and SetOutputMinimum(double min). Often you just want this to be the input image range.
+
+To specify the smoothness of the curve we can use SetAlpha(double alpha)
+
+To specify the threshold type or bound type we can use SetBoundType(SigmoidType type). You can choose between vtkImageDualSigmoid::DUAL, LOWER, or UPPER.
+
+To specify the threshold values we can use SetLowerBeta(double lowerBeta) and SetUpperBeta(double upperBeta). Both are needed for double bounded (dual) thresholding, lower is only needed for lower, and upper is only needed for upper.
+
+![Alt text](https://i2.wp.com/andaharoo.files.wordpress.com/2018/03/sigmoideq.png?ssl=1&w=450)
+
+![Alt text](https://i2.wp.com/andaharoo.files.wordpress.com/2018/03/2018-03-16-15_54_14-desmos-_-graphing-calculator.png?ssl=1&w=450)
+
   
 The example here thresholds an image argv[1] to the specified threshold argv[2]
 
-Example input
+Example input:
 
 ![Alt text](https://i2.wp.com/andaharoo.files.wordpress.com/2018/03/test.png?ssl=1&w=450)
 
-Example output thresholded to 180
+Example output thresholded to 180:
 
 ![Alt text](https://i2.wp.com/andaharoo.files.wordpress.com/2018/03/output.png?ssl=1&w=450)
