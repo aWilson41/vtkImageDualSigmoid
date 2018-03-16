@@ -19,6 +19,7 @@ To specify the threshold values we can use SetLowerBeta(double lowerBeta) and Se
 
 ![Alt text](https://i2.wp.com/andaharoo.files.wordpress.com/2018/03/2018-03-16-15_54_14-desmos-_-graphing-calculator.png?ssl=1&w=450)
 
+![Alt text](https://i1.wp.com/andaharoo.files.wordpress.com/2018/03/doubleboundedsigmoid.png?ssl=1&w=450)
   
 The example here thresholds an image argv[1] to the specified threshold argv[2]
 
