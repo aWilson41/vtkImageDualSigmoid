@@ -7,27 +7,27 @@ Inputs:
  
 Options:
 
- SetOutputMaximum(double max)
+SetOutputMaximum(double max)
  
- SetOutputMinimum(double min)
+SetOutputMinimum(double min)
  
-  Using the output max and min you can specify the range of the resulting image. Usually you want this to be the original image range.
+	Using the output max and min you can specify the range of the resulting image. Usually you want this to be the original image range.
   
- SetAlpha(double alpha)
+SetAlpha(double alpha)
  
-  This is the smoothness of the curve
+	This is the smoothness of the curve
   
- SetLowerBeta(double lowerBeta)
+SetLowerBeta(double lowerBeta)
  
-  This is the lower threshold
+	This is the lower threshold
   
- SetUpperBeta(double upperBeta)
+SetUpperBeta(double upperBeta)
  
-  This is the upper threshold
+	This is the upper threshold
   
- SetBoundType(SigmoidType type)
+SetBoundType(SigmoidType type)
  
-  This needs the enum specified in the filter vtkImageDualSigmoid::DUAL, LOWER, or UPPER. Allowing you to threshold using only the lower threshold, upper threshold, or both.
+	This needs the enum specified in the filter vtkImageDualSigmoid::DUAL, LOWER, or UPPER. Allowing you to threshold using only the lower threshold, upper threshold, or both.
   
 The example here thresholds an image argv[1] to the specified threshold argv[2]
 
